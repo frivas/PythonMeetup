@@ -1,0 +1,109 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "hola mundo",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hola",
+            "hola como estas",
+            "di hola mundo",
+            "di hola"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "SayMyNameIntent",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.FirstName",
+              "samples": [
+                "{name}",
+                "{name} es mi nombre",
+                "mi nombre es {name}",
+                "vale me llamo {name}",
+                "es {name}",
+                "vale soy {name}",
+                "soy {name}",
+                "me llamo {name}"
+              ]
+            }
+          ],
+          "samples": [
+            "no tengo un nombre",
+            "no recuerdo",
+            "no me acuerdo",
+            "no me acuerdo de mi nombre",
+            "no tengo nombre",
+            "{name}",
+            "es {name}",
+            "soy {name}",
+            "{name} es mi nombre",
+            "mi nombre es {name}",
+            "me llamo {name}"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "SayMyNameIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.FirstName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.270495999155.931460090638"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.270495999155.931460090638",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "¿Cómo te llamas?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Por favor, dime tu nombre"
+          },
+          {
+            "type": "PlainText",
+            "value": "Suelo no hablar con extraños, ¿cómo te llamas?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "9"
+}

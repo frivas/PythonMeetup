@@ -1,0 +1,108 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "hello world",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "SayMyNameIntent",
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.FirstName",
+              "samples": [
+                "{name}",
+                "my name is {name}",
+                "ok my name is {name}",
+                "it's {name}",
+                "sure i'm {name}",
+                "i'm {name}",
+                "alright i'm {name}"
+              ]
+            }
+          ],
+          "samples": [
+            "I have no name",
+            "I don't remember",
+            "I don't remember my name",
+            "{name}",
+            "I'm {name}",
+            "It's {name}",
+            "{name} is my name",
+            "my name is {name}"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "SayMyNameIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.FirstName",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.270495999155.931460090638"
+              }
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.270495999155.931460090638",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I don't talk to strangers, what's your name?"
+          },
+          {
+            "type": "PlainText",
+            "value": "Please, tell me your name"
+          },
+          {
+            "type": "PlainText",
+            "value": "What's your name?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "4"
+}

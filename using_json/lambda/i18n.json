@@ -1,0 +1,30 @@
+{
+    "en": {
+        "WELCOME_MSG": [
+			"Welcome, you can say Hello or Help. Which would you like?",
+			"Welcome, say hello or help. What would you like to do?",
+			"Hi, say hello or help. What would you like to do?"
+		],
+        "HELLO_WORLD": "Hello World!, What's your name?",
+        "HELLO_NAME": "Hello {}",
+        "SAY_SOMETHING": "Say something!",
+        "PROMPT_USER": "You can say hello to me! How can I help?",
+        "GOODBYE": "Goodbye!",
+        "YOU_TRIGGERED": "You just triggered {}",
+        "SORRY": "Sorry, I had trouble doing what you asked. Please try again."
+    },
+    "es": {
+        "WELCOME_MSG": [
+			"Te doy la bienvenida, di hola o ayuda, ¿Qué prefieres?",
+			"Hola, puedes decir hola o ayuda, ¿qué deseas hacer?",
+			"Buen día, puedes decir hola o ayuda, ¿qué deseas hacer?"
+		],
+        "HELLO_WORLD": "¡Hola mundo!, ¿Cómo te llamas?",
+        "HELLO_NAME": "Hola {}.",
+        "SAY_SOMETHING": "¡Di algo!",
+        "PROMPT_USER": "¡Puedes decirme hola!. ¿Cómo puedo ayudarte?",
+        "GOODBYE": "¡Hasta Luego!",
+        "YOU_TRIGGERED": "Has iniciado {}.",
+        "SORRY": "Perdona, he tenido algún inconveniente. Por favor, intenta mas tarde."
+    }
+}
